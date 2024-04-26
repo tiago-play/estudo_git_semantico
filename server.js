@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-function criarUsuario(body){
+function criarUsuario(body) {
     // lógica para criação do usuário no banco de dados 
-    return { nome: body.nome, id: 1}
+    return { nome: body.nome, id: 1 }
 }
 
 app.post('/users', (req, res) => {
