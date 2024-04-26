@@ -3,7 +3,8 @@ const app = express()
 const port = 3000
 
 function criarUsuario(body){
-    return { nome: 'usuario test', id: 1}
+    // lógica para criação do usuário no banco de dados 
+    return { nome: body.nome, id: 1}
 }
 
 app.post('/users', (req, res) => {
