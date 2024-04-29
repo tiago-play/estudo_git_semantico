@@ -11,3 +11,5 @@ test ('criarUsuario retorna um objeto de usuário com ID 1', () => {
     expect(resultado).toEqual({ nome: 'John', id: 1 })
 
 })
+
+module.exports = { criarUsuario }
